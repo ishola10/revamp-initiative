@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -36,9 +37,9 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold">Quick Links</h3>
           <ul className="mt-2 space-y-2">
-            <li><a href="#" className="text-sm hover:text-yellow-500">About Us</a></li>
-            <li><a href="#" className="text-sm hover:text-yellow-500">Contact Us</a></li>
-            <li><a href="#" className="text-sm hover:text-yellow-500">Our Projects</a></li>
+            <li><Link className="text-sm hover:text-yellow-500" href="/about">About</Link></li>
+            <li><Link className="text-sm hover:text-yellow-500" href="/contact">Contact Us</Link></li>
+            <li><Link className="text-sm hover:text-yellow-500" href="/project">Our Projects</Link></li>
             <li><a href="#" className="text-sm hover:text-yellow-500">Articles</a></li>
           </ul>
         </div>
