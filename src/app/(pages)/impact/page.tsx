@@ -1,8 +1,17 @@
 import React from 'react'
+import Banner from './component/Banner'
+import ImpactStories from './component/ImpactStories'
+import WestfieldOutreach from './component/WestfieldOutreach'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='w-full'>
+      <Banner />
+      <ImpactStories />
+      <WestfieldOutreach />
+      <Footer />
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Banner = () => {
   return (
@@ -15,8 +16,8 @@ const Banner = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-4">
-          <button className="bg-[#FFC602] flex items-center gap-2 px-4 py-2 rounded text-black text-sm md:text-base">
-            Donate Now <FaArrowRight />
+          <button className="bg-[#FFC602]  px-4 py-2 rounded text-black text-sm md:text-base">
+            <Link href="/donate" className='flex items-center gap-2'>Donate Now <FaArrowRight /></Link>
           </button>
           <div className="flex gap-4">
             <button className="bg-[#1A202C] border flex items-center gap-2 p-2 rounded-full">

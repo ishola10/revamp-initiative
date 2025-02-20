@@ -47,7 +47,7 @@ const Header = () => {
           </Link>
         ))}
         <button className="py-2 px-4 border border-[#FFC602] rounded-lg text-[#FFC602]">
-          Donate
+          <Link href="/donate">Donate</Link>
         </button>
       </div>
     </div>

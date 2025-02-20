@@ -1,5 +1,10 @@
 import React from "react";
-import { FaGraduationCap, FaHandHoldingWater, FaHeartbeat, FaHandsHelping } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaHandHoldingWater,
+  FaHeartbeat,
+  FaHandsHelping,
+} from "react-icons/fa";
 
 const impactAreas = [
   {
@@ -28,25 +33,29 @@ const impactAreas = [
   },
 ];
 
-const ImpactBanner = () => {
+const Banner = () => {
   return (
     <section className="bg-white text-center">
       <div className="container mx-auto">
         <div className="bg-[#FFF4EA] py-16">
-        <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">
-          Impactful Projects
-        </h3>
-        <h2 className="text-4xl font-bold text-gray-900 mt-2 max-w-3xl mx-auto">
-          Driving Impact and Empowering Communities
-        </h2>
+          <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+            Impactful Projects
+          </h3>
+          <h2 className="text-4xl font-bold text-gray-900 mt-2 max-w-3xl mx-auto">
+            Driving Impact and Empowering Communities
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12 px-20">
           {impactAreas.map((area, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {area.icon}
-              <h4 className="text-xl font-semibold text-gray-900 mt-4">{area.title}</h4>
-              <p className="text-gray-600 mt-2 text-sm max-w-xs">{area.description}</p>
+              <h4 className="text-xl font-semibold text-gray-900 mt-4">
+                {area.title}
+              </h4>
+              <p className="text-gray-600 mt-2 text-sm max-w-xs">
+                {area.description}
+              </p>
             </div>
           ))}
         </div>
@@ -55,4 +64,4 @@ const ImpactBanner = () => {
   );
 };
 
-export default ImpactBanner;
+export default Banner;

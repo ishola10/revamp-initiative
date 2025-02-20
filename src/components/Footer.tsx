@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 text-black pt-12 px-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left items-center">
+    <footer className="bg-[#EEF1F6]  text-black  pt-12 px-10">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left items-center">
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-2">
             <Image src="/image/Revamp-logo-2.png" width={60} height={60} alt="logo" />

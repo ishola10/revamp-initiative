@@ -1,8 +1,15 @@
 import React from 'react'
+import Banner from './component/Banner'
+import Volunteer from './component/Volunteer'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='w-full'>
+      <Banner />
+      <Volunteer />
+      <Footer />
+    </div>
   )
 }
 

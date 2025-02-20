@@ -10,14 +10,14 @@ const cardData = [
     title: "Esther Yakubu: A means for survival",
     description:
       "For many, these bottles are just trash, but for Esther Yakubu, they are a means of survival.",
-    image: "/images/Rectangle 23.png",
+    image: "/image/img2.png",
   },
   {
     id: 2,
     title: "Water Scarcity Turns into Opportunity for Kado Estate Resident",
     description:
       "Meet Biliyaminu, who has turned a community’s struggle into a means of livelihood.",
-    image: "/images/Rectangle 23.png",
+    image: "/image/img3.png",
   },
   {
     id: 3,
@@ -30,8 +30,22 @@ const cardData = [
     id: 4,
     title: "Revamp Fun Day",
     description:
-      "Revamp Fun Day initiatives design inspiration to underprivileged kids in Nigeria.",
+      "Revamp Fun Day is one of our flagship initiatives designed to bring joy and inspiration to underserved children in Nigeria.",
+    image: "/image/img1.png",
+  },
+  {
+    id: 5,
+    title: "Walk for Impact",
+    description:
+      "Walk for impact is a unique initiative by revamp initiatives that seeks to bridge the gap between Nigerian past and present through storytelling and engagement",
     image: "/images/Rectangle 23.png",
+  },
+  {
+    id: 6,
+    title: "Westfield Outreach",
+    description:
+      "With the support of Revamp Initiatives, Westfield GCL donated N50,000 to over 100 underserved individuals.",
+    image: "/image/Rectangle 19.png",
   },
 ];
 
@@ -79,8 +93,8 @@ const WhatWeDo: React.FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto w-1/2 mr-16">
-        <div className="flex gap-6 mt-6">
+      <div className="mx-auto w-1/2">
+        <div className="flex gap-6 justify-center mt-6">
           <button
             onClick={prevCard}
             className="bg-[#FFC602] flex items-center gap-2 px-2 py-2 rounded-full text-black"
