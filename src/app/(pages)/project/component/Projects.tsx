@@ -5,12 +5,12 @@ const projects = [
   {
     title: "Revamp Fun Day",
     description: "Revamp Fun Day is one of our flagship initiatives designed to bring joy and inspiration to underserved children in Nigeria.",
-    image: "/images/revamp-fun-day.jpg",
+    image: "/image/image (3).png",
   },
   {
     title: "IDP Project",
     description: "At Revamp Initiatives, our IDP project (Internally Displaced Persons project) is centered on creating opportunities and amplifying the voices of individuals and families living in IDP camps across Nigeria.",
-    image: "/images/idp-project.jpg",
+    image: "/image/IDP 1.jpg",
   },
   {
     title: "Water Scarcity",
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Walk For Impact",
     description: "Walk for Impact is a unique initiative by Revamp Initiatives that seeks to bridge the gap between Nigerian past and present through storytelling and engagement.",
-    image: "/images/walk-for-impact.jpg",
+    image: "/image/TAI03790 (1).jpg",
   },
   {
     title: "Reusable Plastic Management",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Westfield Outreach",
     description: "In December 2024, Westfield Global Construction Limited demonstrated remarkable compassion by extending a helping hand to vulnerable Nigerians. With the support of Revamp Initiatives, they facilitated the donation of ₦500,000 to over 100 individuals in need.",
-    image: "/images/westfield-outreach.jpg",
+    image: "/image/Westfield Outreach 1.jpg",
   },
 ];
 

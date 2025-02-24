@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { impactStories } from "@/helpers/util";
 
 const ImpactStories = () => {
+  const [mediaIndex, setMediaIndex] = useState(
+    impactStories.map(() => 0) 
+  );
+
+  const handleArrowClick = (index: number) => {
+    setMediaIndex((prev) => {
+      const newIndex = [...prev];
+      newIndex[index] = (newIndex[index] + 1) % impactStories[index].media.length;
+      return newIndex;
+    });
+  };
+
   return (
-    <section className="py-16 bg-whte">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-10">
         <h2 className="text-3xl font-bold text-gray-900">
           Impact Stories of Underserved Nigerians
@@ -24,12 +38,15 @@ const ImpactStories = () => {
                     loop
                     muted
                   >
-                    <source src={story.media} type="video/mp4" />
+                    <source
+                      src={story.media[mediaIndex[index]]}
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                 ) : (
                   <Image
-                    src={story.media}
+                    src={story.media[mediaIndex[index]]}
                     alt={story.title}
                     width={500}
                     height={500}
@@ -50,7 +67,10 @@ const ImpactStories = () => {
                   story.type === "video" ? "bg-[#FBEEEE]" : "bg-[#ECF2F2]"
                 }`}
               >
-                <button className="absolute -top-5 right-6 bg-[#FFC602] text-black p-3 rounded-full shadow-md hover:bg-yellow-600 transition">
+                <button
+                  className="absolute -top-5 right-6 bg-[#FFC602] text-black p-3 rounded-full shadow-md hover:bg-yellow-600 transition"
+                  onClick={() => handleArrowClick(index)} 
+                >
                   <FaArrowRight size={18} />
                 </button>
 

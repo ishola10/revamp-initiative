@@ -10,7 +10,7 @@ const teamMembers = [
   { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/Team/Idris.png", grayscale: false },
   { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/Team/Micheal.png", grayscale: false },
   { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/Team/Jessica.png", grayscale: false },
-  { name: "Nwafor E. Chidialkobi", role: "Creative Editor", image: "/image/Team/Nwafor.png", grayscale: false },
+  { name: "Nwafor E. Chidialkobi", role: "Creative Editor", image: "/image/Team/profile.png", grayscale: false },
 ];
 
 const Team = () => {

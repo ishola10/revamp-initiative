@@ -24,7 +24,7 @@ const cardData = [
     title: "IDP Project",
     description:
       "Our IDP project is centered on creating opportunities and amplifying the voices of individuals and families living in IDP camps across Nigeria.",
-    image: "/images/Rectangle 23.png",
+    image: "/image/IDP 1.jpg",
   },
   {
     id: 4,
@@ -38,14 +38,14 @@ const cardData = [
     title: "Walk for Impact",
     description:
       "Walk for impact is a unique initiative by revamp initiatives that seeks to bridge the gap between Nigerian past and present through storytelling and engagement",
-    image: "/images/Rectangle 23.png",
+    image: "/image/TAI03790 (1).jpg",
   },
   {
     id: 6,
     title: "Westfield Outreach",
     description:
       "With the support of Revamp Initiatives, Westfield GCL donated N50,000 to over 100 underserved individuals.",
-    image: "/image/Rectangle 19.png",
+    image: "/image/Westfield Outreach 1.jpg",
   },
 ];
 

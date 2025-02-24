@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="bg-black flex justify-between items-center py-5 px-6 md:px-10 border-b border-white/[.2]">
       <div className="flex items-center gap-2">
-        <Image src="/image/Revamp-logo-2.png" width={50} height={50} alt="logo" />
+        <Image src="/image/icons/logo.png" width={50} height={50} alt="logo" />
         <h1 className="text-white font-semibold text-xl md:text-2xl" style={{ WebkitTextStroke: "1px #E7DEFE" }}>
           Revamp Initiatives
         </h1>

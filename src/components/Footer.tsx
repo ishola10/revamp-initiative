@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left items-center">
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-2">
-            <Image src="/image/Revamp-logo-2.png" width={60} height={60} alt="logo" />
+            <Image src="/image/icons/logo.png" width={60} height={60} alt="logo" />
           </div>
           <p className="mt-3 text-sm max-w-xs">
             Recognizing the disparity in access to opportunities, education, healthcare, and sustainable livelihoods, the initiative is built on the principle of creating lasting positive social change THROUGH CREATIVITY.
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 
         <div>
           <h3 className="font-bold">Address</h3>
-          <p className="text-sm mt-2">93, JJ Etobike Street, Mabushi, Abuja</p>
+          <p className="text-sm mt-2">93, JJ Eboigbe Street, Mabushi, Abuja</p>
           <p className="text-sm mt-1">09090009999</p>
           <p className="text-sm mt-1">revampinitiatives@gmail.com</p>
         </div>
