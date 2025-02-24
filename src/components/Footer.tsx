@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold">Address</h3>
           <p className="text-sm mt-2">93, JJ Eboigbe Street, Mabushi, Abuja</p>
-          <p className="text-sm mt-1">09090009999</p>
+          <p className="text-sm mt-1">09163577386</p>
           <p className="text-sm mt-1">revampinitiatives@gmail.com</p>
         </div>
 

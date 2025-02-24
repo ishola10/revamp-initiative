@@ -15,7 +15,7 @@ const WestfieldOutreach = () => {
 
   return (
     <section className="py-10 bg-gray-100">
-      <div className="container mx-auto px-6 lg:px-16">
+      <div className="container mx-auto px-6 lg:px-10">
         <h2 className="text-3xl font-bold text-gray-900">Westfield Outreach</h2>
 
         <div className="relative mt-6 rounded-lg shadow-lg overflow-hidden">
