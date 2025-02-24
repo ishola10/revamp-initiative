@@ -19,7 +19,7 @@ const Header = () => {
           className="text-white font-semibold text-xl md:text-2xl"
           style={{ WebkitTextStroke: "1px #E7DEFE" }}
         >
-          Revamp Initiatives
+          <Link href="/home">Revamp Initiatives</Link>
         </h1>
       </div>
 
