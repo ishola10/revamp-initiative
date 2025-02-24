@@ -45,11 +45,11 @@ const Banner = () => {
 
       <div className="flex flex-col md:flex-row gap-6 mt-10 md:mt-14 items-center justify-center md:justify-start">
         <p className="text-[#FDFAEE] text-sm">
-          <span className="text-[#FD7E14] pr-2 text-2xl">N1, 260 000</span>{" "}
+          <span className="text-[#FD7E14] text-2xl">N1, 260 000</span>{" "}
           Donation
         </p>
         <p className="text-[#FDFAEE] text-sm">
-          <span className="text-[#FD7E14] pr-2 text-2xl">1, 220</span> People
+          <span className="text-[#FD7E14] text-2xl">1, 220</span> People
           Helped
         </p>
       </div>

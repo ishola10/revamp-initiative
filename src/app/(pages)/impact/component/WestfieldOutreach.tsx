@@ -18,9 +18,20 @@ const WestfieldOutreach = () => {
       <div className="container mx-auto px-6 lg:px-16">
         <h2 className="text-3xl font-bold text-gray-900">Westfield Outreach</h2>
 
-        <div className="relative mt-6 bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-          <div className="relative z-10 p-6 text-white text-sm">
+        <div className="relative mt-6 rounded-lg shadow-lg overflow-hidden">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+          >
+            <source src="/videos/Westfield Outreach (1).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="absolute inset-0 bg-black/60"></div>
+
+          <div className="relative z-10 p-6 pt-40 text-white text-sm">
             <p>
               In December 2024,{" "}
               <strong>Westfield Global Construction Limited</strong>
