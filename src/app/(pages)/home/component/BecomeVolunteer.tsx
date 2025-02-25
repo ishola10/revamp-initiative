@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const BecomeVolunteer = () => {
   return (
@@ -15,7 +16,7 @@ const BecomeVolunteer = () => {
 
         <div className="flex justify-center">
           <button className="bg-[#FFC602] flex items-center gap-2 px-8 py-2 rounded mt-4 text-black">
-            Proceed <FaArrowRight />
+            <Link href="/community" className="flex items-center gap-2">Proceed <FaArrowRight /></Link>
           </button>
         </div>
       </div>

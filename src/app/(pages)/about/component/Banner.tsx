@@ -24,7 +24,7 @@ const AboutBanner = () => {
       <div className="mt-10 flex flex-wrap justify-center gap-16 text-gray-800">
         <div className="flex flex-col items-center">
           <FaProjectDiagram className="text-4xl text-[#FFC602]" />
-          <p className="text-xl md:text-2xl font-bold mt-2">1.2k+</p>
+          <p className="text-xl md:text-2xl font-bold mt-2">15+</p>
           <p className="text-sm">Projects Completed</p>
         </div>
         <div className="flex flex-col items-center">
@@ -34,12 +34,12 @@ const AboutBanner = () => {
         </div>
         <div className="flex flex-col items-center">
           <FaUsers className="text-4xl text-[#FFC602]" />
-          <p className="text-xl md:text-2xl font-bold mt-2">480</p>
+          <p className="text-xl md:text-2xl font-bold mt-2">5+</p>
           <p className="text-sm">Partners Worldwide</p>
         </div>
         <div className="flex flex-col items-center">
           <FaDonate className="text-4xl text-[#FFC602]" />
-          <p className="text-xl md:text-2xl font-bold mt-2">1.2m</p>
+          <p className="text-xl md:text-2xl font-bold mt-2">1.2m+</p>
           <p className="text-sm">Donations Received</p>
         </div>
       </div>

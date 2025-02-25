@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const teamMembers = [
   { name: "Taibat Ajiboye", role: "Founder & Creative Director", image: "/image/Team/Taibat.png", grayscale: false },
-  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/Teams/taiwo1.png", grayscale: false },
+  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/team-members/taiwo.png", grayscale: false },
   { name: "Vivian Eze", role: "Program Implementation Head", image: "/image/Team/Vivian.png", grayscale: false },
-  { name: "Joshua Adamu", role: "Communication & Media Lead", image: "/image/Team/Joshua.png", grayscale: true },
-  { name: "Adelokunmi Raymond", role: "Graphics Designer", image: "/image/Team/Raymond.png", grayscale: false },
-  { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/Teams/yahuza idris.png", grayscale: false },
-  { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/Teams/micheal adeboye.png", grayscale: false },
-  { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/Teams/jessica thomas.png", grayscale: false },
-  { name: "Nwafor E. Chidialkobi", role: "Creative Editor", image: "/image/Teams/nwafor1.png", grayscale: false },
+  { name: "Joshua Adamu", role: "Communication & Media Lead", image: "/image/Team/profile.png", grayscale: true },
+  { name: "Adelokunmi Raymond", role: "Graphics Designer", image: "/image/team-members/adelokunmi-raymond.png", grayscale: false },
+  { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/team-members/yahuza-idris.png", grayscale: false },
+  { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/team-members/micheal-adeboye.png", grayscale: false },
+  { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/team-members/jessica-thomas.png", grayscale: false },
+  { name: "Nwafor E. Chidialkobi", role: "Creative Editor", image: "/image/Team/Nwafor.png", grayscale: false },
 ];
 
 const Team = () => {
@@ -52,6 +52,7 @@ const TeamCard = ({ member }: { member: { name: string; role: string; image: str
     <div className="w-44 h-44">
       <Image
         src={member.image}
+        loading="lazy"
         alt={member.name}
         width={128}
         height={128}

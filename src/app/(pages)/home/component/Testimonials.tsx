@@ -1,83 +1,40 @@
-"use client";
-
-
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-
-interface Testimonial {
-  name: string;
-  date: string;
-  feedback: string;
-  image: string;
-}
-
-const testimonials: Testimonial[] = [
-  {
-    name: "Mrs Meimunat",
-    date: "08/02/2025",
-    feedback:
-      "I was fortunate enough to work with them on a project aimed at supporting a community in need, and their dedication to extending help was evident every step of the way. Their team truly understands the power of design and how it can make an impact.",
-    image: "/images/Rectangle 23.png",
-  },
-  {
-    name: "John Doe",
-    date: "15/01/2025",
-    feedback:
-      "An amazing organization! The impact they make is undeniable, and I'm grateful to have contributed to their initiatives.",
-    image: "/images/Rectangle 23.png",
-  },
-  {
-    name: "Sarah Ahmed",
-    date: "22/12/2024",
-    feedback:
-      "Working with them was an eye-opening experience. Their passion and dedication are truly inspiring.",
-    image: "/images/Rectangle 23.png",
-  },
-];
+import React from "react";
 
 const Testimonials: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000); 
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
-    <div className="bg-white text-black py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold">Client Testimonials</h2>
-      <p className="text-gray-600 max-w-2xl mx-auto mt-2">
-        {testimonials[currentIndex].feedback}
-      </p>
-
-      <div className="flex items-center justify-center mt-6">
-        <Image
-          src={testimonials[currentIndex].image}
-          alt={testimonials[currentIndex].name}
-            width={48}
-            height={48}
-          className="w-12 h-12 rounded-full object-cover border-2 border-gray-300"
-        />
-        <div className="ml-3 flex items-center gap-2">
-          <p className="font-semibold">{testimonials[currentIndex].name}</p>
-          <p className="text-sm text-gray-500">{testimonials[currentIndex].date}</p>
+    <div className="bg-[#FBEEEE] py-16 px-6 md:px-10 mx-auto">
+      <div className="flex flex-col md:flex-row gap-10 items-center mx-auto">
+        <div className="w-full md:w-1/2 h-[40vh] md:h-[80vh] rounded-lg overflow-hidden">
+          <video
+            src="/videos/Michaels Interview.mp4"
+            controls
+            autoPlay
+            loop
+            muted
+            className="w-full h-full object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
-      </div>
 
-      <div className="flex justify-center mt-4 space-x-2">
-        {testimonials.map((_, index) => (
-          <span
-            key={index}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-black" : "bg-gray-300"
-            }`}
-          ></span>
-        ))}
+        <div className="w-full md:w-1/2">
+          <h1 className="text-black text-3xl md:text-5xl font-semibold mb-6 md:mb-8 text-center md:text-left">
+            Client Testimonials
+          </h1>
+
+          <div className="flex flex-col md:flex-row gap-4">
+            <p className="text-[#626262] text-center md:text-left">
+              The Revamp for Impact Initiative was established to address the
+              pressing social, economic, and environmental challenges faced by
+              vulnerable, underprivileged, and underserved communities in
+              Africa. Recognizing the disparity in access to opportunities,
+              education, healthcare, and sustainable livelihoods, the initiative
+              is built on the principle of creating lasting positive social
+              change THROUGH CREATIVITY.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

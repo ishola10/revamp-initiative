@@ -23,7 +23,7 @@ const page = () => {
           />
           <div>
             <h4 className="text-lg font-semibold text-gray-900">Questions?</h4>
-            <p className="text-gray-600">Give us a call right now <strong>09090009999</strong></p>
+            <p className="text-gray-600">Give us a call right now <strong>09163577386</strong></p>
           </div>
         </div>
       </div>
