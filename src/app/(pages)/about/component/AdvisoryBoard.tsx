@@ -5,7 +5,7 @@ const advisoryMembers = [
   { name: "Taibat Ajiboye", image: "/image/Team/Taibat.png", grid: "md:col-span-2 md:row-span-2" },
   { name: "Adebayo Adeleke", image: "/image/Mr Adebayo Adeleke.png", grid: "" },
   { name: "Dummy content", image: "/image/Team/Nwafor.png", grid: "" },
-  { name: "Dummy content", image: "/image/Team/Jessica.png", grid: "" },
+  { name: "Dummy content", image: "/image/Team/jessica-thomas.png", grid: "" },
   { name: "Prof Abdul-Rasheed Na’Allah", image: "/image/prof abdul-rasheed.png", grid: "md:col-span-2 md:row-span-2" },
   { name: "Dummy content", image: "/image/Team/Raymond.png", grid: "" },
 ];
@@ -23,7 +23,7 @@ const AdvisoryBoard = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 auto-rows-[minmax(150px,_auto)]">
           {advisoryMembers.map((member, index) => (
             <div key={index} className={`relative rounded-lg overflow-hidden ${member.grid}`}>
-              <Image src={member.image} alt={member.name} width={300} height={300} className="object-cover w-full h-full" />
+              <Image src={member.image} alt={member.name} width={300} height={300} className=" w-full h-full" />
               <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full">
                 <h3 className="text-lg font-semibold">{member.name}</h3>
               </div>
