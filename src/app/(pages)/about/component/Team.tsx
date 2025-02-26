@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const teamMembers = [
   { name: "Taibat Ajiboye", role: "Founder & Creative Director", image: "/image/Team/Taibat.png", grayscale: false },
-  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/Team/taiwo.png", grayscale: false },
+  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/Team/Taiwo.png", grayscale: false },
   { name: "Vivian Eze", role: "Program Implementation Head", image: "/image/Team/Vivian.png", grayscale: false },
   { name: "Joshua Adamu", role: "Communication & Media Lead", image: "/image/Team/profile.png", grayscale: true },
   { name: "Adelokunmi Raymond", role: "Graphics Designer", image: "/image/Team/adelokunmi-raymond.png", grayscale: false },
