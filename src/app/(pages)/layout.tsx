@@ -15,8 +15,8 @@ interface Metadata {
 // });
 
 export const metadata: Metadata = {
-  title: "Agtrade",
-  description: "Your Daily Pulse on Nigeria's Agri-Prices",
+  title: "Revamp Iniiatives",
+  description: "Together we can make a positive change through creativity.",
 };
 
 // Define the props type for RootLayout
