@@ -1,14 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
-const advisoryMembers = [
-  { name: "Taibat Ajiboye", image: "/image/Team/Taibat.png", grid: "md:col-span-2 md:row-span-2" },
-  { name: "Adebayo Adeleke", image: "/image/Mr Adebayo Adeleke.png", grid: "" },
-  { name: "Dummy content", image: "/image/Team/Nwafor.png", grid: "" },
-  { name: "Dummy content", image: "/image/Team/jessica-thomas.png", grid: "" },
-  { name: "Prof Abdul-Rasheed Na’Allah", image: "/image/prof abdul-rasheed.png", grid: "md:col-span-2 md:row-span-2" },
-  { name: "Dummy content", image: "/image/Team/Raymond.png", grid: "" },
-];
+import { advisoryMembers } from "@/helpers/util";
 
 const AdvisoryBoard = () => {
   return (
