@@ -15,13 +15,13 @@ const Footer: React.FC = () => {
             Recognizing the disparity in access to opportunities, education, healthcare, and sustainable livelihoods, the initiative is built on the principle of creating lasting positive social change THROUGH CREATIVITY.
           </p>
           <div className="flex space-x-4 mt-4 text-lg">
-            <a href="#" className="text-gray-600 hover:text-black">
+            <a href="https://www.instagram.com/therevamp_initiative?igsh=d2swc20zNTFxcHFw&utm_source=qr" className="text-gray-600 hover:text-black">
               <FaInstagram />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black">
+            <a href="https://x.com/the_revamp_?s=21" className="text-gray-600 hover:text-black">
               <FaTwitter />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black">
+            <a href="https://www.facebook.com/share/1BPQFpTGF1/?mibextid=wwXIfr" className="text-gray-600 hover:text-black">
               <FaFacebookF />
             </a>
           </div>

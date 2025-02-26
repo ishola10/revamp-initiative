@@ -60,7 +60,7 @@ const JoinCommunity = () => {
             the Finder services.
           </p>
           <button className="mt-4 bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md">
-            09090009999
+          09163577386
           </button>
         </div>
       </div>

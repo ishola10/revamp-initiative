@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const teamMembers = [
   { name: "Taibat Ajiboye", role: "Founder & Creative Director", image: "/image/Team/Taibat.png", grayscale: false },
-  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/team-members/taiwo.png", grayscale: false },
+  { name: "Mr Taiwo", role: "Operations Manager", image: "/image/Team/taiwo.png", grayscale: false },
   { name: "Vivian Eze", role: "Program Implementation Head", image: "/image/Team/Vivian.png", grayscale: false },
   { name: "Joshua Adamu", role: "Communication & Media Lead", image: "/image/Team/profile.png", grayscale: true },
-  { name: "Adelokunmi Raymond", role: "Graphics Designer", image: "/image/team-members/adelokunmi-raymond.png", grayscale: false },
-  { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/team-members/yahuza-idris.png", grayscale: false },
-  { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/team-members/micheal-adeboye.png", grayscale: false },
-  { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/team-members/jessica-thomas.png", grayscale: false },
+  { name: "Adelokunmi Raymond", role: "Graphics Designer", image: "/image/Team/adelokunmi-raymond.png", grayscale: false },
+  { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/Team/yahuza-idris.png", grayscale: false },
+  { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/Team/micheal-adeboye.png", grayscale: false },
+  { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/Team/jessica-thomas.png", grayscale: false },
   { name: "Nwafor E. Chidialkobi", role: "Creative Editor", image: "/image/Team/Nwafor.png", grayscale: false },
 ];
 
@@ -49,21 +49,23 @@ const Team = () => {
 
 const TeamCard = ({ member }: { member: { name: string; role: string; image: string; grayscale: boolean } }) => (
   <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-left">
-    <div className="w-44 h-44">
+    <div className="w-44 h-44 flex justify-center items-center bg-gray-100 rounded-md overflow-hidden">
       <Image
         src={member.image}
         loading="lazy"
         alt={member.name}
-        width={128}
-        height={128}
-        className={`rounded-md object-cover w-full h-full ${member.grayscale ? "grayscale" : ""}`}
+        width={176}
+        height={176}
+        quality={100}
+        className={`w-full h-full  ${member.grayscale ? "grayscale" : ""}`}
       />
     </div>
 
     <h3 className="text-lg font-semibold text-gray-900 mt-4">{member.name}</h3>
     <p className="text-sm text-gray-600">{member.role}</p>
-
   </div>
 );
+
+
 
 export default Team;

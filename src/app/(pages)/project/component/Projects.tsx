@@ -128,7 +128,7 @@ const Slideshow = ({ images }: SlideshowProps) => {
           alt="Project image"
           width={100}
           height={100}
-          className={`w-full h-48 object-cover absolute transition-opacity duration-1000 ease-in-out ${
+          className={`w-full h-48 absolute transition-opacity duration-1000 ease-in-out ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
         />
