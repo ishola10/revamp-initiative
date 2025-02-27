@@ -18,10 +18,12 @@ const Volunteer = () => {
         <h3 className="text-xl font-semibold text-gray-900 mb-4">
           Become a volunteer!
         </h3>
-        <form>
+        <form action="https://formspree.io/f/mjkgnvrd" method="POST">
           <div className="mb-4">
             <input
               type="text"
+              name="name"
+              id="name"
               placeholder="Full name *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -29,6 +31,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="email"
+              name="email"
+              id="email"
               placeholder="Email *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -36,6 +40,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="text"
+              name="age"
+              id="age"
               placeholder="Age *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -43,6 +49,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="text"
+              name="gender"
+              id="gender"
               placeholder="Gender *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -50,6 +58,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="text"
+              name="phone"
+              id="phone"
               placeholder="Phone number *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -57,6 +67,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="text"
+              name="location"
+              id="location"
               placeholder="Location *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
@@ -64,6 +76,8 @@ const Volunteer = () => {
           <div className="mb-4">
             <input
               type="text"
+              name="skills"
+              id="skills"
               placeholder="Creative skills *"
               className="w-full px-4 py-3 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FFC602]"
             />
