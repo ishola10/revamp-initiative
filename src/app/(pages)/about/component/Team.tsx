@@ -19,17 +19,17 @@ const Team = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {teamMembers.slice(4, 7).map((member, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+            {teamMembers.slice(4, 6).map((member, index) => (
               <TeamCard key={index} member={member} />
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {teamMembers.slice(7, 9).map((member, index) => (
               <TeamCard key={index} member={member} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
