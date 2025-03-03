@@ -30,7 +30,9 @@ const JoinCommunity = () => {
               service.
             </p>
             <button className="mt-4 bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md">
+              <a href="mailto:revampinitiatives@gmail.com" className="mt-4 bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md">
               revampinitiatives@gmail.com
+              </a>
             </button>
           </div>
         </div>
@@ -60,7 +62,9 @@ const JoinCommunity = () => {
             the Finder services.
           </p>
           <button className="mt-4 bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md">
-          09163577386
+          <a href="tel:+1234567890" className="mt-4 bg-gray-900 text-white text-sm font-medium py-2 px-4 rounded-md">
+            +234 (91) 635-77386
+          </a>
           </button>
         </div>
       </div>

@@ -10,7 +10,7 @@ const BecomeVolunteer = () => {
           Become a Volunteer
         </h1>
         <p className="text-black">
-          Get Involved, Inspire Hope, Change Lives ready to make a difference?
+          Get Involved, Inspire Hope, Change Lives, Ready to make a difference?
           Sign up today and be a part of the change
         </p>
 

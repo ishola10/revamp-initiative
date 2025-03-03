@@ -33,17 +33,16 @@ const ImpactStories = () => {
               <div className="relative">
                 {story.type === "video" ? (
                   <video
-                    className="w-full h-[25rem] object-cover"
-                    autoPlay
-                    loop
-                    muted
-                  >
-                    <source
-                      src={story.media[mediaIndex[index]]}
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  key={story.media[mediaIndex[index]]}
+                  className="w-full h-[25rem] object-cover"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={story.media[mediaIndex[index]]} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                
                 ) : (
                   <Image
                     src={story.media[mediaIndex[index]]}
