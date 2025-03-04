@@ -7,18 +7,12 @@ const Testimonials: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-10 items-center mx-auto">
       <div className="w-full md:w-1/2">
           <h1 className="text-black text-3xl md:text-5xl font-semibold mb-6 md:mb-8 text-center md:text-left">
-            Client Testimonials
+          Contributing to Creativity and Impact at The Revamp Initiatives
           </h1>
 
           <div className="flex flex-col md:flex-row gap-4">
             <p className="text-[#626262] text-center md:text-left">
-              The Revamp for Impact Initiative was established to address the
-              pressing social, economic, and environmental challenges faced by
-              vulnerable, underprivileged, and underserved communities in
-              Africa. Recognizing the disparity in access to opportunities,
-              education, healthcare, and sustainable livelihoods, the initiative
-              is built on the principle of creating lasting positive social
-              change THROUGH CREATIVITY.
+            At The Revamp Initiatives , collaboration and creativity drive our mission. Michael shares his experience, offering insights into his role, key takeaways, and the impact of working in a dynamic environment. His journey reflects our commitment to storytelling and meaningful change.
             </p>
           </div>
         </div>

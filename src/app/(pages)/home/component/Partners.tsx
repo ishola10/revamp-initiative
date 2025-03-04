@@ -36,6 +36,18 @@ const Partners = () => {
             height={50}
             alt="WestField"
           />
+          <img
+            src="/image/icons/20250304_170457.png"
+            width={100}
+            height={100}
+            alt="WestField"
+          />
+          <img
+            src="/image/icons/scrih 0.png"
+            width={100}
+            height={100}
+            alt="WestField"
+          />
         </div>
       </div>
     </div>
