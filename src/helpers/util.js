@@ -48,7 +48,7 @@ export const teamMembers = [
   // { name: "Mr Taiwo", role: "Operations Manager", image: "/image/Team/Taiwo.png", grayscale: false },
   { name: "Vivian Eze", role: "Program Implementation Head", image: "/image/Team/Vivian.png", grayscale: false },
   // { name: "Joshua Adamu", role: "Communication & Media Lead", image: "/image/Team/profile.png", grayscale: true },
-  { name: "AdeKammbi Raymond", role: "Graphics Designer", image: "/image/Team/adelokunmi-raymond.png", grayscale: false },
+  { name: "AdeKanmbi Raymond", role: "Graphics Designer", image: "/image/Team/adelokunmi-raymond.png", grayscale: false },
   // { name: "Yahuza Idris", role: "Photo Journalist", image: "/image/Team/yahuza-idris.png", grayscale: false },
   { name: "Micheal Adeboye", role: "Impact Officer", image: "/image/Team/micheal-adeboye.png", grayscale: false },
   { name: "Jessica Thomas", role: "Research & Development Officer", image: "/image/Team/jessica-thomas.png", grayscale: false },
