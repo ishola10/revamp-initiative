@@ -9,15 +9,15 @@ const advisoryMembers = [
     grid: "md:col-span-2 md:row-span-2",
   },
   { name: "Adebayo Adeleke", description: "CEO of Supply Chain Africa", image: "/image/Mr Adebayo Adeleke.png", grid: "" },
-  { name: "George Obong", description: "President, Association of Resident Doctors, ARD-FCTA", image: "/image/Team/Nwafor.png", grid: "" },
-  { name: "Dummy content", image: "/image/Team/jessica-thomas.png", grid: "" },
+  { name: "George Obong", description: "President, Association of Resident Doctors, ARD-FCTA", image: "/image/George Obong.jpg", grid: "" },
+  // { name: "Dummy content", image: "/image/Team/jessica-thomas.png", grid: "" },
   {
     name: "Prof Abdul-Rasheed Na’Allah",
     description: "Former VC, Kwasu, University of Abuja ~ Scholar and Professor",
     image: "/image/prof abdul-rasheed.png",
     grid: "md:col-span-2 md:row-span-2",
   },
-  { name: "Dummy content", image: "/image/Team/Raymond.png", grid: "" },
+  // { name: "Dummy content", image: "/image/Team/Raymond.png", grid: "" },
 ];
 
 const AdvisoryBoard = () => {
@@ -34,7 +34,7 @@ const AdvisoryBoard = () => {
           underserved communities.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {advisoryMembers.map((member, index) => (
             <div
               key={index}
@@ -48,7 +48,7 @@ const AdvisoryBoard = () => {
                 className="w-full h-full"
               />
               <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-2 w-full">
-                <h3 className="text-lg font-semibold">{member.name}</h3>
+                <h3 className="text-sm font-semibold">{member.name}</h3>
                 <p className="text-sm">{member.description}</p>
               </div>
             </div>
