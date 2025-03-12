@@ -42,7 +42,7 @@ const DonationPage = () => {
   const [isCustomAmount, setIsCustomAmount] = useState(false);
   const [imageLoading, setImageLoading] = useState(true);
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState(""); // Error state for email
+  const [emailError, setEmailError] = useState("");
 
   const handleImageLoad = () => {
     setImageLoading(false);
@@ -50,7 +50,6 @@ const DonationPage = () => {
 
   const handlePaymentSuccess = (response: { status: string; message: string; reference: string }) => {
     console.log("Payment successful:", response);
-    // alert("Thank you for your donation!");
   };
 
   const validateEmail = (email: string) => {
