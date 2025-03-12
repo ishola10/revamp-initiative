@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "@paystack/inline-js": "^2.22.2",
     "aos": "^2.3.4",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-paystack": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

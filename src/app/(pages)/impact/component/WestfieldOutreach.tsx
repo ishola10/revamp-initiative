@@ -78,8 +78,24 @@ const WestfieldOutreach = () => {
                 Join our super hero community
               </h3>
               <div className="mt-4 flex items-center gap-4 text-gray-700">
-                <Image src="/gif/whatsapp.gif" alt="whatsapp" width={50} height={50} />
-                <p className="max-w-[32rem] cursor-pointer hover:underline">Be part of an exclusive network where ideas thrive, collaborations spark, and valuable insights are shared daily!</p>
+                <a
+                  href="https://chat.whatsapp.com/ICDcIqfoTVR1lgmTDS2Cg0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 hover:underline"
+                >
+                  <Image
+                    src="/gif/whatsapp.gif"
+                    alt="whatsapp"
+                    width={50}
+                    height={50}
+                  />
+                  <p className="max-w-[32rem] cursor-pointer">
+                    Be part of an exclusive network where ideas thrive,
+                    collaborations spark, and valuable insights are shared
+                    daily!
+                  </p>
+                </a>
               </div>
             </div>
           </div>

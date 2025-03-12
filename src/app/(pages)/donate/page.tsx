@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import PaystackButton from "@/components/PaystackButton";
 
 const donationCauses = [
   {
@@ -36,13 +37,35 @@ const donationCauses = [
 
 const DonationPage = () => {
   const [activeCause, setActiveCause] = useState(donationCauses[0]);
-  const [selectedAmount, setSelectedAmount] = useState("₦50,000.00");
+  const [selectedAmount, setSelectedAmount] = useState("50000");
   const [customAmount, setCustomAmount] = useState("");
   const [isCustomAmount, setIsCustomAmount] = useState(false);
   const [imageLoading, setImageLoading] = useState(true);
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState(""); // Error state for email
 
   const handleImageLoad = () => {
     setImageLoading(false);
+  };
+
+  const handlePaymentSuccess = (response: { status: string; message: string; reference: string }) => {
+    console.log("Payment successful:", response);
+    alert("Thank you for your donation!");
+  };
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+    if (!validateEmail(newEmail)) {
+      setEmailError("Please enter a valid email address");
+    } else {
+      setEmailError("");
+    }
   };
 
   return (
@@ -85,33 +108,25 @@ const DonationPage = () => {
       </div>
 
       <div className="mt-6 bg-white text-black p-6 rounded-lg shadow-md max-w-3xl">
-        <h3 className="text-xl font-semibold text-black mb-4">
-          Donation Amount
-        </h3>
+        <h3 className="text-xl font-semibold text-black mb-4">Donation Amount</h3>
         <div className="mb-4">
           <div className="flex flex-wrap gap-3 mt-3">
-            {["₦10,000", "₦25,000", "₦50,000", "₦100,000", "1m"].map(
-              (amount) => (
-                <button
-                  key={amount}
-                  onClick={() => {
-                    setSelectedAmount(amount);
-                    setIsCustomAmount(false);
-                  }}
-                  className={`px-4 py-2 border rounded-full text-gray-700 hover:bg-gray-200 ${
-                    selectedAmount === amount && !isCustomAmount
-                      ? "bg-black text-white"
-                      : ""
-                  }`}
-                >
-                  {amount}
-                </button>
-              )
-            )}
+            {["10000", "25000", "50000", "100000", "1000000"].map((amount) => (
+              <button
+                key={amount}
+                onClick={() => {
+                  setSelectedAmount(amount);
+                  setIsCustomAmount(false);
+                }}
+                className={`px-4 py-2 border rounded-full text-gray-700 hover:bg-gray-200 ${
+                  selectedAmount === amount && !isCustomAmount ? "bg-black text-white" : ""
+                }`}
+              >
+                ₦{parseInt(amount).toLocaleString()}
+              </button>
+            ))}
             <button
-              className={`px-4 py-2 bg-yellow-500 text-white rounded-lg ${
-                isCustomAmount ? "bg-black" : ""
-              }`}
+              className={`px-4 py-2 bg-yellow-500 text-white rounded-lg ${isCustomAmount ? "bg-black" : ""}`}
               onClick={() => {
                 setIsCustomAmount(true);
                 setSelectedAmount("Custom");
@@ -122,7 +137,7 @@ const DonationPage = () => {
           </div>
           {isCustomAmount && (
             <input
-              type="text"
+              type="number"
               className="w-full mt-4 p-2 border rounded-md"
               placeholder="Enter Custom Amount"
               value={customAmount}
@@ -132,60 +147,29 @@ const DonationPage = () => {
         </div>
 
         <div className="mb-4">
-          <h3 className="text-xl font-semibold">Select Payment Method</h3>
-          <div className="mt-3 flex gap-4">
-            <label className="flex items-center gap-2">
-              <input
-                type="radio"
-                name="payment"
-                checked
-                className="form-radio"
-              />
-              Credit Card
-            </label>
-            <label className="flex items-center gap-2">
-              <input type="radio" name="payment" className="form-radio" />
-              PayPal
-            </label>
-          </div>
-          <input
-            type="text"
-            className="w-full mt-4 p-2 border rounded-md"
-            placeholder="Credit Card Number"
-          />
-        </div>
-
-        <div className="mb-4">
           <h3 className="text-xl font-semibold">Personal Information</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-            <input
-              type="text"
-              className="p-2 border rounded-md"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              className="p-2 border rounded-md"
-              placeholder="Last Name"
-            />
-          </div>
           <input
             type="email"
             className="w-full mt-4 p-2 border rounded-md"
             placeholder="Email Address"
+            value={email}
+            onChange={handleEmailChange}
           />
+          {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
         </div>
 
         <div className="mt-6 text-lg font-semibold">
           Donation Total:{" "}
           <span className="text-yellow-600">
-            {isCustomAmount ? customAmount : selectedAmount}
+            ₦{isCustomAmount ? parseInt(customAmount || "0").toLocaleString() : parseInt(selectedAmount).toLocaleString()}
           </span>
         </div>
 
-        <button className="mt-4 bg-yellow-500 text-white p-2 rounded-lg text-lg font-semibold">
-          Donate Now
-        </button>
+        <PaystackButton
+          amount={isCustomAmount ? parseInt(customAmount || "0") : parseInt(selectedAmount)}
+          email={email}
+          onSuccess={handlePaymentSuccess}
+        />
       </div>
     </div>
   );
