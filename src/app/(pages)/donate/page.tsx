@@ -50,7 +50,7 @@ const DonationPage = () => {
 
   const handlePaymentSuccess = (response: { status: string; message: string; reference: string }) => {
     console.log("Payment successful:", response);
-    alert("Thank you for your donation!");
+    // alert("Thank you for your donation!");
   };
 
   const validateEmail = (email: string) => {
